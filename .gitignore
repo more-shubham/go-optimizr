@@ -1,0 +1,121 @@
+# =============================================================================
+# GO-OPTIMIZR .gitignore
+# Professional Go project gitignore for image processing CLI
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Go Binaries & Build Artifacts
+# -----------------------------------------------------------------------------
+# Compiled binary (main application)
+cmd/optimizr/optimizr
+go-optimizr
+optimizr
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Output of go coverage tool
+*.out
+coverage.html
+coverage.txt
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Dependency directories (Go modules)
+vendor/
+
+# -----------------------------------------------------------------------------
+# Image Data (CRITICAL: Prevents pushing 46GB to GitHub!)
+# -----------------------------------------------------------------------------
+# Source images directory
+images/
+
+# Output directories
+output/
+output-hq/
+
+# Analytics output
+summary.json
+
+# -----------------------------------------------------------------------------
+# IDE & Editor Files
+# -----------------------------------------------------------------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# GoLand / JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -----------------------------------------------------------------------------
+# OS Generated Files
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -----------------------------------------------------------------------------
+# Docker
+# -----------------------------------------------------------------------------
+# Docker build cache (if using buildx)
+.docker/
+
+# -----------------------------------------------------------------------------
+# Environment & Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# -----------------------------------------------------------------------------
+# Logs & Debug Files
+# -----------------------------------------------------------------------------
+*.log
+debug/
+logs/
+
+# -----------------------------------------------------------------------------
+# Temporary Files
+# -----------------------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.bak
+
+# -----------------------------------------------------------------------------
+# Test Data (Generated)
+# -----------------------------------------------------------------------------
+test-images/
+benchmark-data/
